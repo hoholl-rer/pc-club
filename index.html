@@ -1,136 +1,51 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CyberLife — Найкращий комп’ютерний клуб міста</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://raw.githubusercontent.com/hoholl-rer/pc-club/main/styles.css">
+  <meta charset="UTF-8">
+  <title>CyberLife ПК клуб</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>    
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <div class="logo"></div>
-                <nav>
-                    <ul>
-                        <li><a href="#home">Головна</a></li>
-                        <li><a href="#features">Послуги</a></li>
-                        <li><a href="#pricing">Ціни</a></li>
-                        <li><a href="#contact">Контакти</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
+<body>
 
-    <section class="hero" id="home">
-        <div class="container">
-            <div class="hero-content">
-                <h1>CyberLife - Найкращий комп’ютерний клуб у місті</h1>
-                <p>Сучасні ігрові комп’ютери, комфортна атмосфера та професійні турніри. Приєднуйся до спільноти геймерів!</p>
-                <a href="#pricing" class="btn">Обрати тариф</a>
-            </div>
-        </div>
+  <header>
+    <div class="container">
+      <h1>CyberLife</h1>
+      <p class="slogan">Твій портал у світ кіберспорту</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <h2>Наші зали</h2>
+      <p>Обирай найкраще місце для гри — швидкість, комфорт, RGB атмосфера</p>
     </section>
 
-    <section class="features" id="features">
-        <div class="container">
-            <h2 class="section-title">Наші переваги</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-tachometer-alt"></i>
-                    </div>
-                    <h3>Потужні ПК</h3>
-                    <p>Ігрові комп’ютери з процесорами Intel Core i9 та відеокартами RTX 4090 забезпечують плавний геймплей у будь-яких іграх.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-network-wired"></i>
-                    </div>
-                    <h3>Швидкий інтернет</h3>
-                    <p>Високошвидкісне оптоволоконне з’єднання зі швидкістю 1 Гбіт/с та низьким пінгом для комфортної онлайн-гри.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-trophy"></i>
-                    </div>
-                    <h3>Турніри</h3>
-                    <p>Регулярні турніри з популярних кіберспортивних дисциплін з цінними призами та професійними коментаторами.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-couch"></i>
-                    </div>
-                    <h3>Комфорт</h3>
-                    <p>Ергономічні ігрові крісла, якісні монітори з високою частотою оновлення та професійні гарнітури.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-utensils"></i>
-                    </div>
-                    <h3>Зона відпочинку</h3>
-                    <p>Затишна зона відпочинку з автоматами з напоями та снеками, де можна відпочити між ігровими сесіями.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h3>Спільнота</h3>
-                    <p>Активна геймерська спільнота, де ви знайдете однодумців та нових друзів для спільних ігор.</p>
-                </div>
-            </div>
-        </div>
+    <section class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1617191518000-01075090c5ec" alt="Зал 1">
+        <h3>Преміум Зал</h3>
+        <p>RTX 4090 / 240 Гц / PlayStation 5 / 27" монітори</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1605379399642-870262d3d051" alt="Зал 2">
+        <h3>Стандарт Зал</h3>
+        <p>RTX 3060 / 144 Гц / RGB крісла / Ігри без лагів</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1587202372775-d5f8a6f0f3df" alt="Зал 3">
+        <h3>VR-зона</h3>
+        <p>Окуляри VR / Багато простору / Суперреалістичні ігри</p>
+      </div>
     </section>
 
-    <section class="pricing" id="pricing">
-        <div class="container">
-            <h2 class="section-title">Наші тарифи</h2>
-            <div class="pricing-grid">
-                <div class="pricing-card">
-                    <h3>Стандарт</h3>
-                    <div class="price">200 грн <span>/год</span></div>
-                    <ul>
-                        <li>Доступ до ігрових ПК</li>
-                        <li>Швидкий інтернет</li>
-                        <li>Базові напої</li>
-                        <li>До 6 годин на день</li>
-                    </ul>
-                    <a href="#contact" class="btn">Забронювати</a>
-                </div>
-                <div class="pricing-card popular">
-                    <div class="popular-badge">Популярний</div>
-                    <h3>Преміум</h3>
-                    <div class="price">5000 грн <span>/місяць</span></div>
-                    <ul>
-                        <li>Необмежений доступ</li>
-                        <li>Пріоритетні місця</li>
-                        <li>Безкоштовні напої</li>
-                        <li>Знижка на турніри 20%</li>
-                        <li>Персональна шафка</li>
-                    </ul>
-                    <a href="#contact" class="btn">Забронювати</a>
-                </div>
-                <div class="pricing-card">
-                    <h3>Нічний</h3>
-                    <div class="price">1000 грн <span>/ніч</span></div>
-                    <ul>
-                        <li>З 22:00 до 8:00</li>
-                        <li>Необмежений доступ</li>
-                        <li>Безкоштовні напої</li>
-                        <li>Турніри тільки для нічних</li>
-                    </ul>
-                    <a href="#contact" class="btn">Забронювати</a>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="centered-btn">
+      <button>Забронювати місце</button>
+    </div>
+  </main>
 
-    <footer>
-        <div class="container">
-            <p>© CyberLife, 2025. Всі права захищені.</p>
-        </div>
-    </footer>
+  <footer>
+    <p>© 2025 CyberLife. Всі права захищені.</p>
+  </footer>
+
 </body>
 </html>
