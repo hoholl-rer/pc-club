@@ -1,0 +1,178 @@
+/* Основні кольори */
+:root {
+  --main-bg: #0d0d1a;
+  --card-bg: #1b1b2f;
+  --primary: #4e00ff;
+  --secondary: #00d9ff;
+  --text-color: #ffffff;
+  --hover-glow: 0 0 15px var(--primary);
+  --border-radius: 12px;
+  --transition: all 0.3s ease-in-out;
+}
+
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background-color: var(--main-bg);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  color: var(--secondary);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.card {
+  background-color: var(--card-bg);
+  border-radius: var(--border-radius);
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.8);
+  transition: var(--transition);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--hover-glow);
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-weight: bold;
+  transition: var(--transition);
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: var(--secondary);
+  box-shadow: var(--hover-glow);
+  color: #000;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.navbar {
+  background-color: #12122b;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  color: var(--text-color);
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: var(--transition);
+}
+
+.navbar a:hover {
+  color: var(--secondary);
+}
+
+.hero {
+  background-image: url('your-cyberclub-photo.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 120px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 56px;
+  color: #7f00ff; /* яскравий фіолетовий */
+  text-shadow:
+    0 0 10px #7f00ff,
+    0 0 20px #7f00ff,
+    0 0 30px #7f00ff,
+    0 0 40px #4e00ff;
+  font-family: 'Orbitron', sans-serif;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.hero p.subheader {
+  font-size: 20px;
+  color: #a8a8ff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 40px;
+  max-width: 700px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 0.5px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+  background-color: var(--card-bg);
+  margin: 10% auto;
+  padding: 30px;
+  border-radius: var(--border-radius);
+  width: 90%;
+  max-width: 500px;
+  color: var(--text-color);
+  box-shadow: 0 0 20px var(--primary);
+  position: relative;
+}
+
+.modal-content input,
+.modal-content select,
+.modal-content button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 15px;
+  font-family: inherit;
+}
+
+.modal-content button {
+  background-color: var(--primary);
+  color: white;
+  cursor: pointer;
+}
+
+.modal-content button:hover {
+  background-color: var(--secondary);
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
